@@ -1,0 +1,229 @@
+.download {
+  &-text {
+    font-size: 1.6rem;
+    line-height: 3.6rem;
+    color: #fff;
+  }
+  &__title {
+    text-align: center;
+    color: #fff;
+    font-size: 3.2rem;
+    line-height: 3.6rem;
+    font-weight: 700;
+  }
+  &__detail {
+    display: flex;
+    align-items: center;
+    &-img {
+      border-radius: 2rem;
+      aspect-ratio: 1;
+      max-width: 30rem;
+      max-height: 30rem;
+    }
+  }
+  &__configuration {
+    margin-left: 5rem;
+    &-detail {
+      display: flex;
+      align-items: center;
+      font-size: 1.6rem;
+      line-height: 3.6rem;
+      color: #fff;
+      margin-bottom: 2.2rem;
+      &:last-child {
+        margin-bottom: 0;
+      }
+    }
+    &-name {
+      margin-left: 2.5rem;
+      font-weight: 700;
+      width: 8rem;
+      margin-right: 11.4rem;
+    }
+  }
+  &-btn {
+    width: 100%;
+    img {
+      margin-right: 0.6rem;
+    }
+  }
+}
+.page_product {
+  .content__questions {
+    &-col {
+      .content__questions-text {
+        margin-bottom: 0.8rem;
+      }
+    }
+    &-text-2 {
+      margin-bottom: 0.7rem;
+      padding-left: 3rem;
+      position: relative;
+      color: #000;
+      transition: all 0.3s ease;
+      &:hover {
+        color: #17a2b8;
+        text-decoration: underline;
+      }
+      &::before {
+        content: "";
+        position: absolute;
+        width: 0.5rem;
+        height: 0.5rem;
+        border-radius: 50%;
+        background: #000;
+        left: 1rem;
+        top: 50%;
+        transform: translate(0, -50%);
+      }
+    }
+  }
+}
+.info__detail {
+  &-title {
+    font-size: 2rem;
+    line-height: 2.4rem;
+    font-weight: 700;
+    color: #fff;
+    margin-bottom: 1.2rem;
+  }
+  &-text {
+    color: #fff;
+    margin-bottom: 1.2rem;
+    font-size: 1.6rem;
+    line-height: 3rem;
+  }
+  &-img {
+    display: flex;
+    justify-content: center;
+    img {
+      max-width: 60rem;
+      aspect-ratio: 1/0.63;
+      border-radius: 2rem;
+      margin-bottom: 1rem;
+    }
+  }
+}
+.form__btn {
+  display: flex;
+  justify-content: end;
+  .form-btn {
+    width: 18rem;
+  }
+}
+.btn-telegram {
+  display: flex;
+  justify-content: center;
+}
+.telegram-btn {
+  background-image: none;
+  background-color: #17a2b8;
+  padding: 1.5rem 1.7rem;
+  i {
+    font-size: 2rem;
+    color: #fff;
+    margin-right: 1rem;
+  }
+}
+.star {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-top: 0.2rem solid #cfcfcf;
+  border-bottom: 0.2rem solid #cfcfcf;
+  padding: 1.3rem 0;
+  span {
+    margin-right: 1.6rem;
+    font-size: 2.5rem;
+    &.checked {
+      color: #fff500;
+    }
+  }
+  &-text {
+    font-size: 1.5rem;
+    line-height: 1.8rem;
+    color: #fff;
+    font-weight: 500;
+  }
+}
+.info__form {
+  display: flex;
+  justify-content: space-between;
+  &-left {
+    width: calc(30% - 5rem);
+  }
+  &-right {
+    width: 70%;
+  }
+  &-text {
+    font-size: 1.4rem;
+    line-height: 1.7rem;
+    color: #ffffff;
+    font-weight: 700;
+    margin-bottom: 1rem;
+    span {
+      color: #fd4e5d;
+      margin-left: 0.5rem;
+    }
+  }
+  .input__info {
+    background-color: transparent;
+    font-size: 1.4rem;
+    line-height: 1.7rem;
+    width: 100%;
+    padding: 0.5rem 0;
+    border: none;
+    border-bottom: 0.2rem solid #cfcfcf;
+    color: #ffffff;
+    font-family: "Montserrat", sans-serif;
+  }
+  ::placeholder {
+    color: #ffffff;
+  }
+  .input__col {
+    height: -webkit-fill-available;
+  }
+}
+@media (max-width: 768px) {
+  .download {
+    &__detail {
+      flex-wrap: wrap;
+      &-img {
+        display: flex;
+        justify-content: center;
+        width: 100%;
+        max-width: 100%;
+        max-height: 30rem;
+        margin-bottom: 2rem;
+      }
+    }
+    &__configuration {
+      margin-left: 0;
+    }
+  }
+  .info__form {
+    flex-wrap: wrap;
+    &-left {
+      width: 100%;
+      margin-bottom: 1.5rem;
+    }
+    &-right {
+      width: 100%;
+    }
+    .input__col {
+      height: 8rem;
+    }
+  }
+}
+@media (max-width: 576px) {
+  .info__detail {
+    &-img {
+      img {
+        max-width: 100%;
+        aspect-ratio: 1/0.63;
+        border-radius: 2rem;
+        margin-bottom: 1rem;
+      }
+    }
+  }
+}

@@ -1,0 +1,127 @@
+.page_download {
+  .content__questions {
+    &-col {
+      .content__questions-text {
+        margin-bottom: 0.8rem;
+      }
+    }
+    &-text-2 {
+      margin-bottom: 0.7rem;
+      padding-left: 3rem;
+      position: relative;
+      margin-bottom: 3rem;
+      &::before {
+        content: "";
+        position: absolute;
+        width: 0.5rem;
+        height: 0.5rem;
+        border-radius: 50%;
+        background: #000;
+        left: 1rem;
+        top: 50%;
+        transform: translate(0, -50%);
+      }
+    }
+  }
+}
+.download__col {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  &--img {
+    width: 40%;
+    display: flex;
+    justify-content: center;
+    border-right: 0.4rem solid #cfcfcf;
+    img {
+      aspect-ratio: 1;
+      border-radius: 2rem;
+      max-width: 22rem;
+      max-height: 22rem;
+    }
+  }
+  &--title {
+    width: 60%;
+    font-size: 8rem;
+    line-height: 9rem;
+    font-weight: 700;
+    text-align: center;
+    color: #fff;
+  }
+}
+.apk__file {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  &-text {
+    font-size: 1.6rem;
+    line-height: 2rem;
+    font-weight: 500;
+    margin-right: 3.2rem;
+  }
+  &-btn {
+    padding: 1.4rem 2rem;
+    &:hover {
+      background-color: #3b93ff;
+      color: #fff;
+    }
+    img {
+      margin-right: 0.6rem;
+    }
+  }
+}
+.content__download {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  &-title {
+    font-size: 2.8rem;
+    line-height: 3.4rem;
+    font-weight: 700;
+    color: #fff;
+  }
+  &-text {
+    color: #fff;
+    a {
+      display: inline;
+      color: #ed5c15;
+    }
+  }
+}
+@media (max-width: 768px) {
+  .download__col {
+    &--img {
+      width: 30%;
+      img {
+        width: 15rem;
+        height: 15rem;
+      }
+    }
+    &--title {
+      width: 70%;
+      padding: 0 1.5rem;
+      font-size: 5rem;
+      line-height: 6rem;
+    }
+  }
+}
+@media (max-width: 576px) {
+  .download__col {
+    flex-wrap: wrap;
+    &--img {
+      width: 100%;
+      margin-bottom: 2rem;
+      border-right: none;
+      border-bottom: 0.4rem solid #cfcfcf;
+      padding-bottom: 2rem;
+      img {
+        width: 100%;
+        height: 100%;
+      }
+    }
+    &--title {
+      width: 100%;
+    }
+  }
+}

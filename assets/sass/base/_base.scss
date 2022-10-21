@@ -1,0 +1,168 @@
+html {
+  scroll-behavior: smooth;
+  font-size: 62.5%;
+}
+body {
+  padding: 0;
+  margin: 0;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 400;
+}
+img {
+  display: block;
+  max-width: 100%;
+  object-fit: cover;
+}
+a {
+  display: block;
+  text-decoration: none;
+  transition: all 0.3s ease;
+  &:hover {
+    text-decoration: none;
+    color: #ed5c15;
+  }
+}
+p {
+  font-size: 1.4rem;
+  line-height: 2rem;
+  font-weight: 400;
+}
+.btn__all {
+  background-image: linear-gradient(to right, #ed5c15, #fe854a);
+  border-radius: 2.5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid #fff;
+  padding: 1.4rem 0;
+  font-size: 1.8rem;
+  line-height: 2.2rem;
+  font-weight: 700;
+  color: #fff;
+  transition: all 0.3s ease;
+  &:hover {
+    transform: translateY(-4px);
+    color: #fff;
+  }
+}
+.ads {
+  margin-top: 1.6rem;
+  &__all {
+    background-color: #581378;
+    height: 28rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  &__content {
+    font-size: 6.4rem;
+    line-height: 7.7rem;
+    color: #fff;
+  }
+}
+main {
+  background-image: linear-gradient(
+    to right,
+    #1f0c70,
+    #2a1297,
+    #2a43aa,
+    #336ed8,
+    #3989f4,
+    #3b93ff
+  );
+}
+.mb10 {
+  margin-bottom: 1rem;
+}
+.mb15 {
+  margin-bottom: 1.5rem;
+}
+.mb20 {
+  margin-bottom: 2rem;
+}
+.mb24 {
+  margin-bottom: 2.4rem;
+}
+.mb25 {
+  margin-bottom: 2.5rem;
+}
+.mb30 {
+  margin-bottom: 3rem;
+}
+.mb35 {
+  margin-bottom: 3.5rem;
+}
+.mb40 {
+  margin-bottom: 4rem;
+}
+.mb45 {
+  margin-bottom: 4.5rem;
+}
+.mb50 {
+  margin-bottom: 5rem;
+}
+.mb55 {
+  margin-bottom: 5.5rem;
+}
+.mb60 {
+  margin-bottom: 6rem;
+}
+.mb70 {
+  margin-bottom: 7rem;
+}
+.mb75 {
+  margin-bottom: 7.5rem;
+}
+.mb100 {
+  margin-bottom: 10rem;
+}
+.mb200 {
+  margin-bottom: 20rem;
+}
+input,
+button,
+textarea {
+  outline: none;
+  line-height: 1;
+  font-size: 1.5rem;
+  line-height: 2.4rem;
+  &:hover {
+    outline: none;
+  }
+  &::placeholder {
+    color: #919191;
+  }
+}
+
+button {
+  cursor: pointer;
+}
+
+.container {
+  max-width: 1070px;
+  margin: 0 auto;
+  padding: 0 1.5rem;
+}
+.mb80 {
+  margin-bottom: 8rem;
+}
+@media (min-width: 1400px) {
+  .container {
+    max-width: 1200px;
+  }
+}
+@media (max-width: 992px) {
+  html {
+    font-size: calc(100vw / 99.2);
+  }
+}
+@media (max-width: 768px) {
+  html {
+    font-size: calc(100vw / 66.8);
+  }
+}
+@media (max-width: 576px) {
+  html {
+    font-size: calc(100vw / 47.6);
+  }
+}

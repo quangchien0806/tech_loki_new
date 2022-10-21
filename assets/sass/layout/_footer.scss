@@ -1,0 +1,122 @@
+.footer {
+  background-color: #100346;
+  padding-top: 4.7rem;
+  &__layout {
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid #fff;
+    padding-bottom: 1.8rem;
+    margin-bottom: 1.6rem;
+  }
+  &__logo {
+    margin-bottom: 3rem;
+  }
+  &__icon {
+    display: flex;
+    i {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+
+      color: #fff;
+      width: 32px;
+      height: 32px;
+      border-radius: 50%;
+      margin-right: 2rem;
+    }
+  }
+  &__col {
+    &-1 {
+      width: 23.6%;
+    }
+    &-2 {
+      width: 20.8%;
+    }
+    &-3 {
+      width: 20.8%;
+    }
+    &-4 {
+      width: 20.8%;
+    }
+    &-title {
+      font-size: 1.6rem;
+      line-height: 3.6rem;
+      font-weight: 700;
+      color: #fff;
+      border-bottom: 1px solid #fff;
+      margin-bottom: 2rem;
+    }
+    .menu-link {
+      font-size: 1.3rem;
+      line-height: 2.8rem;
+      font-weight: 400;
+      color: #fff;
+      margin-bottom: 1rem;
+      &:hover {
+        color: #ed5c15;
+      }
+    }
+  }
+}
+.copyrighter {
+  padding-bottom: 1.6rem;
+  text-align: center;
+  &__text {
+    font-size: 1.3rem;
+    line-height: 3.6rem;
+    font-weight: 700;
+    color: #fff;
+  }
+}
+.icon-1 {
+  background-color: #3d5a96;
+}
+.icon-2 {
+  background-color: #2aa3ef;
+}
+.icon-3 {
+  background-color: #f52929;
+}
+.icon-4 {
+  background-color: #45aee4;
+}
+@media (max-width: 768px) {
+  .footer {
+    &__layout {
+      flex-wrap: wrap;
+    }
+    &__col-1 {
+      width: 49%;
+      margin-bottom: 3rem;
+    }
+    &__col-2 {
+      width: 49%;
+      margin-bottom: 3rem;
+    }
+    &__col-3 {
+      width: 49%;
+    }
+    &__col-4 {
+      width: 49%;
+    }
+  }
+}
+@media (max-width: 450px) {
+  .footer {
+    &__col-1 {
+      width: 100%;
+      margin-bottom: 3rem;
+    }
+    &__col-2 {
+      width: 100%;
+      margin-bottom: 3rem;
+    }
+    &__col-3 {
+      width: 100%;
+      margin-bottom: 3rem;
+    }
+    &__col-4 {
+      width: 100%;
+    }
+  }
+}

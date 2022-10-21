@@ -1,0 +1,150 @@
+.page_game,
+.page_app {
+  .tabs__nav {
+    li {
+      &.active {
+        .btn__tabs {
+          background-image: linear-gradient(to right, #ed5c15, #fe854a);
+          color: #fff;
+        }
+      }
+    }
+  }
+  .btn__tabs {
+    width: 20rem;
+    margin-right: 3rem;
+    background-image: none;
+    background-color: #ffffff;
+    color: black;
+  }
+}
+.game__title {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  &-img {
+    display: none;
+  }
+}
+.tabs__nav {
+  display: flex;
+}
+.categories {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+
+  &__left {
+    width: calc(83% - 10rem);
+  }
+  &__right {
+    width: 20rem;
+    display: block;
+    &-all {
+      background-color: #ffffff;
+      border-radius: 1.2rem;
+    }
+    &-title {
+      background-image: linear-gradient(to right, #ed5c15, #fe854a);
+      padding: 1rem 0;
+      border: 2px solid #fff;
+      text-align: center;
+      color: #fff;
+      font-size: 1.6rem;
+      line-height: 2rem;
+      font-weight: 700;
+      border-radius: 1.2rem 1.2rem 0 0;
+    }
+    &-col {
+      padding: 1.3rem 1rem;
+    }
+    &-icon {
+      display: flex;
+      align-items: center;
+      margin-bottom: 1.5rem;
+    }
+    &-text {
+      margin-left: 1.9rem;
+      font-size: 1.4rem;
+      line-height: 1.7rem;
+      font-weight: 500;
+      color: #000;
+    }
+  }
+}
+.paging {
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  &__col {
+    cursor: pointer;
+    background-color: #fff;
+    color: #000;
+    font-size: 1.6rem;
+    line-height: 2.8rem;
+    font-weight: 700;
+    transition: all 0.3s ease;
+    &.active {
+      background-color: #ed5c15;
+      color: #fff;
+    }
+    &:hover {
+      background-color: #ed5c15;
+      color: #fff;
+    }
+  }
+  &__number {
+    width: 3.7rem;
+    height: 3.7rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    margin-right: 0.8rem;
+  }
+  &__dot {
+    color: #ed5c15;
+    font-size: 2rem;
+    margin-right: 0.8rem;
+  }
+  &__next {
+    font-weight: 600;
+    padding: 0.5rem 1.8rem;
+    border-radius: 3.5rem;
+  }
+}
+@media (max-width: 805px) {
+  .game__title {
+    &-img {
+      cursor: pointer;
+      display: block;
+    }
+  }
+  .categories {
+    position: relative;
+    &__left {
+      width: 100%;
+    }
+    &__right {
+      display: none;
+      position: absolute;
+      z-index: 32;
+      transition: all 0.2s linear;
+      right: 1rem;
+      &.show {
+        display: block;
+      }
+    }
+  }
+}
+@media (max-width: 768px) {
+  .tabs__nav {
+    flex-wrap: wrap;
+    li {
+      margin-bottom: 1rem;
+      .btn__tabs {
+        padding: 1rem 0;
+      }
+    }
+  }
+}
